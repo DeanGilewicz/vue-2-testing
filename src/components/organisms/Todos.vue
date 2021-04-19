@@ -11,10 +11,12 @@
           data-test="text-input"
           ref="input-todo-add"
           :disabled="stateMachine.currentState === 'pending'"
-          :messages="newTodoMessages"
           @keydown="handleKeyPressReturn"
         />
         <button class="inline-block w-48 mt-3 ml-2 px-4 py-2 border border-solid rounded-full leading-normal tracking-wide text-center text-base bg-blue-500 text-white cursor-pointer" data-test="button-todo-add" @click="handleAddTodo">Add Todo</button>
+      </div>
+      <div>
+        <p v-if="Object.keys(newTodoMessages).length > 0" class="text-sm text-red-500" data-test="message">{{ newTodoMessages.error }}</p>
       </div>
     </div>
     <div class="todos-incomplete my-8">
