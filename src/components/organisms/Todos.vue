@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import { mapActions, mapState, mapGetters } from 'vuex';
+import { mapActions, mapGetters, mapState } from 'vuex';
 import Todo from '@/components/molecules/Todo';
 import { myClearTimeout, mySetTimeout } from '@/utils/helpers';
 
@@ -98,14 +98,14 @@ export default {
       return this.newTodo.name;
     }
   },
-  // created() {
-  //   if (this.$store.state.todos.length === 0) {
-  //     this.$store.dispatch('getTodos').catch((err) => {
-  //       // eslint-disable-next-line no-console
-  //       console.error('err', err);
-  //     });
-  //   }
-  // },
+  created() {
+    if (this.$store.state.todos.length === 0) {
+      this.$store.dispatch('getTodos').catch((err) => {
+        // eslint-disable-next-line no-console
+        console.error('err', err);
+      });
+    }
+  },
   mounted() {
     if (this.$refs['input-todo-add']) {
       this.$refs['input-todo-add'].focus();
@@ -145,13 +145,13 @@ export default {
       return this.$router.push(`/demo-app/${todo.id}/edit`);
     },
     handleGetAsyncMessage() {
-      // this.$store.dispatch('getMessage').then((message) => {
-      //   this.asyncMessage = message.text;
-      //   this.handleResetAsyncTimer();
-      // }).catch(() => {
-      //   this.asyncMessage = 'Server is down so you may as well create some todos!';
-      //   this.handleResetAsyncTimer();
-      // });
+      this.$store.dispatch('getMessage').then((message) => {
+        this.asyncMessage = message.text;
+        this.handleResetAsyncTimer();
+      }).catch(() => {
+        this.asyncMessage = 'Server is down so you may as well create some todos!';
+        this.handleResetAsyncTimer();
+      });
     },
     handleKeyPressReturn(e) {
       if (e.keyCode !== 13 || e.key !== 'Enter') return;
