@@ -14,6 +14,12 @@ const routes = [
     path: '/demo-app',
     name: 'DemoApp',
     component: () => import(/* webpackChunkName: "demoapp" */ '../views/DemoApp.vue')
+  },
+  {
+    path: '/demo-app/:id/edit',
+    name: 'EditTodo',
+    component: () => import(/* webpackChunkName: "demoappedittodo" */ '../views/DemoAppEditTodo.vue'),
+    props: true
   }
 ];
 

@@ -3,7 +3,7 @@
     <div class="inline-flex items-center">
       <input
         v-if="doesTodoExist"
-        class="cursor-pointer"
+        class="p-1 cursor-pointer"
         data-test="todo-input-checkbox"
         id="todo-input-checkbox"
         type="checkbox"

@@ -7,7 +7,7 @@
       <div>
         <input
           v-model="newTodo.name"
-          class="inline-block border border-solid"
+          class="inline-block p-1 border border-solid"
           data-test="text-input"
           ref="input-todo-add"
           :disabled="stateMachine.currentState === 'pending'"
