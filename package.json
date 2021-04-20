@@ -6,10 +6,12 @@
   "author": "gilewiczd@gmail.com",
   "license": "ISC",
   "scripts": {
+    "api": "cd ./api && node index.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
-    "test:e2e": "vue-cli-service test:e2e",
+    "test:e2e": "start-server-and-test api http://localhost:4000 'vue-cli-service test:e2e --env coverage=false --headless --browser chrome'",
+    "test:e2e:watch": "start-server-and-test api http://localhost:4000 'vue-cli-service test:e2e --env coverage=false'",
     "test:integration": "vue-cli-service test:unit tests/integration/**/*.spec.js",
     "test:integration:watch": "vue-cli-service test:unit --watch tests/integration/**/*.spec.js",
     "test:unit": "vue-cli-service test:unit",
@@ -29,6 +31,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.4",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-e2e-cypress": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -53,6 +56,7 @@
     "husky": "^6.0.0",
     "lodash": "^4.17.21",
     "sinon": "^10.0.0",
+    "start-server-and-test": "^1.12.1",
     "tailwindcss": "^2.1.1",
     "vue-template-compiler": "^2.6.11"
   }
