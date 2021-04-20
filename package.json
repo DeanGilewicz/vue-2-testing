@@ -10,6 +10,11 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
+    "test:coverage:all": "npm run test:coverage:unit && nyc --no-clean npm run test:coverage:integration && nyc --no-clean npm run test:coverage:e2e",
+    "test:coverage:e2e": "MY_CYPRESS_ENV=coverage nyc --branches 65 --functions 65 --lines 65 --statements 65 start-server-and-test api http://localhost:4000 'vue-cli-service test:e2e --headless --browser chrome'",
+    "test:coverage:integration": "nyc --branches 50 --functions 50 --lines 50 --statements 50 npm run test:integration",
+    "test:coverage:merge": "npm run test:coverage:all && nyc merge .nyc_output coverage.json",
+    "test:coverage:unit": "nyc --branches 80 --functions 80 --lines 80 --statements 80 npm run test:unit",
     "test:e2e": "start-server-and-test api http://localhost:4000 'vue-cli-service test:e2e --env coverage=false --headless --browser chrome'",
     "test:e2e:watch": "start-server-and-test api http://localhost:4000 'vue-cli-service test:e2e --env coverage=false'",
     "test:integration": "vue-cli-service test:unit tests/integration/**/*.spec.js",
@@ -20,7 +25,8 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-merge-commit": "npm run test:unit"
+      "pre-merge-commit": "npm run test:unit && npm run test:integration && npm run test:e2e",
+      "pre-push": "npm run test:coverage:all"
     }
   },
   "dependencies": {
@@ -44,6 +50,7 @@
     "autoprefixer": "^9.8.6",
     "axios-mock-adapter": "^1.19.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
     "babel-plugin-rewire": "^1.2.0",
     "chai": "^4.1.2",
     "eslint": "^6.7.2",
@@ -55,6 +62,7 @@
     "flush-promises": "^1.0.2",
     "husky": "^6.0.0",
     "lodash": "^4.17.21",
+    "nyc": "^15.1.0",
     "sinon": "^10.0.0",
     "start-server-and-test": "^1.12.1",
     "tailwindcss": "^2.1.1",

@@ -24,3 +24,8 @@ pnpm-debug.log*
 # e2e
 /tests/e2e/videos/
 /tests/e2e/screenshots/
+
+# coverage reports
+.nyc_output/
+coverage/
+coverage.json
