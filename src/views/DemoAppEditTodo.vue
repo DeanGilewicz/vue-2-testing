@@ -13,7 +13,7 @@
               data-test="edit-todo-input"
               v-if="theTodo"
               type="text"
-              class="w-64 p-1 border border-solid border-link text-lg text-gray-600"
+              class="w-64 p-1 border border-solid text-lg text-gray-600"
               :value="theTodo.name"
               @input="(e) => this.newName = e.target.value"
             />
