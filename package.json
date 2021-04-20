@@ -2,6 +2,9 @@
   "name": "vue-2-testing",
   "version": "0.1.0",
   "private": true,
+  "description": "Vue JS 2 Testing Demo Application",
+  "author": "gilewiczd@gmail.com",
+  "license": "ISC",
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
