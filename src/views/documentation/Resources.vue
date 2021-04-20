@@ -6,42 +6,42 @@
     <section id="resource-frameworks" class="mt-4 md:mt-6 lg:mt-8">
       <h2 class="text-xl md:text-2xl lg:text-3xl">Test Frameworks</h2>
       <ul class="list-disc mt-2 ml-5">
-        <li><a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Cypress</a></li>
-        <li><a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Jest</a></li>
-        <li><a href="https://mochajs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Mocha</a></li>
+        <li><a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Cypress</a></li>
+        <li><a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Jest</a></li>
+        <li><a href="https://mochajs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Mocha</a></li>
       </ul>
     </section>
     <section id="resource-libraries" class="mt-4 md:mt-6 lg:mt-8">
       <h2 class="text-xl md:text-2xl lg:text-3xl">Test Libraries</h2>
       <ul class="list-disc mt-2 ml-5">
         <li>
-          <a href="https://www.npmjs.com/package/axios-mock-adapter" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Axios Mock Adapter</a>
+          <a href="https://www.npmjs.com/package/axios-mock-adapter" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Axios Mock Adapter</a>
           <ul class="list-disc ml-5">
             <li>Export a single instance of MockAdapter to use in each test file</li>
             <li>Creating a separate instance in each test file can lead to race conditions</li>
           </ul>
         </li>
         <li>
-          <a href="https://www.chaijs.com/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Chai</a>
+          <a href="https://www.chaijs.com/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Chai</a>
           <ul class="list-disc ml-5">
             <li>We typically use the expect assertion style</li>
           </ul>
         </li>
         <li>
-          <a href="https://www.npmjs.com/package/flush-promises" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Flush Promises</a>
+          <a href="https://www.npmjs.com/package/flush-promises" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Flush Promises</a>
           <ul class="list-disc ml-5">
             <li>This can be used to fulfill any promises should your test assert on logic that occurs after an async promise based operation (resolve or reject)</li>
           </ul>
         </li>
         <li>
-          <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Istanbul</a>
+          <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Istanbul</a>
           <ul class="list-disc ml-5">
             <li>Istanbul instruments ES5 and ES2015+ JavaScript code with line counters, so that you can track your unit-test coverage</li>
             <li>The nyc command-line-client for Istanbul is useful and allows for custom set up</li>
           </ul>
         </li>
         <li>
-          <a href="https://www.npmjs.com/package/babel-plugin-rewire" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Rewire</a>
+          <a href="https://www.npmjs.com/package/babel-plugin-rewire" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Rewire</a>
           <ul class="list-disc ml-5">
             <li>
               Rewire adds a default export to any module which does not already have one
@@ -61,13 +61,13 @@
           </ul>
         </li>
         <li>
-          <a href="https://sinonjs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Sinon</a>
+          <a href="https://sinonjs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Sinon</a>
           <ul class="list-disc ml-5">
             <li>Sinon provides the ability to add standalone test spies, stubs and mocks</li>
           </ul>
         </li>
         <li>
-          <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Vue Test Utils</a>
+          <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Vue Test Utils</a>
           <ul class="list-disc ml-5">
             <li>The official unit-test utility library for Vue JS enabling the ability to test single file components</li>
           </ul>
@@ -77,7 +77,7 @@
     <section id="resource-libraries" class="mt-4 md:mt-6 lg:mt-8">
       <h2 class="text-xl md:text-2xl lg:text-3xl">Test Examples</h2>
       <ul class="list-disc mt-2 ml-5">
-        <li><a href="https://lmiller1990.github.io/vue-testing-handbook/" target="_blank" rel="noopener noreferrer" class="font-normal text-base">Vue Test Handbook</a></li>
+        <li><a href="https://lmiller1990.github.io/vue-testing-handbook/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Vue Test Handbook</a></li>
       </ul>
     </section>
   </main>

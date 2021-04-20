@@ -84,7 +84,7 @@
       <p class="mt-2">Unit tests provide code coverage depth and functional tests provide user requirement test case coverage breadth.</p>
     </section>
     <section id="next-up" class="mt-4 md:mt-6 lg:mt-8">
-      Let's dive in to the <router-link to="/documentation/set-up" class="font-normal text-base">set up</router-link>.
+      Let's dive in to the <router-link to="/documentation/set-up" class="font-normal text-base text-blue-400">set up</router-link>.
     </section>
   </main>
 </template>

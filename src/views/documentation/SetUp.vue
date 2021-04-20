@@ -5,8 +5,8 @@
     </section>
     <section id="installation" class="mt-4 md:mt-6 lg:mt-8">
       <h2 class="text-xl md:text-2xl lg:text-3xl">Installation</h2>
-      <p class="mt-2">If your project was created using <a href="https://cli.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="font-normal">Vue Cli</a> then your project will already have a <span class="text-green-500">tests</span> folder and necessary default <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" class="font-normal">npm packages</a>.</p>
-      <p class="mt-2">If your project does not yet have a <span class="text-green-500">tests</span> folder then create one at the root level of the project. Cd into this folder and then use <a href="https://cli.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="font-normal">Vue Cli</a> to create a new project selecting only options needed for testing. Once complete, you can delete application code (components) leaving only testing files.</p>
+      <p class="mt-2">If your project was created using <a href="https://cli.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Vue Cli</a> then your project will already have a <span class="text-green-500">tests</span> folder and necessary default <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">npm packages</a>.</p>
+      <p class="mt-2">If your project does not yet have a <span class="text-green-500">tests</span> folder then create one at the root level of the project. Cd into this folder and then use <a href="https://cli.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Vue Cli</a> to create a new project selecting only options needed for testing. Once complete, you can delete application code (components) leaving only testing files.</p>
     </section>
     <section id="folder-structure" class="mt-4 md:mt-6 lg:mt-8">
       <h2 class="text-xl md:text-2xl lg:text-3xl">Folder Structure</h2>
@@ -39,14 +39,14 @@
       <h3 class="mt-2 mb-2 text-base md:text-lg lg:text-xl">Assertion Library</h3>
       <ul class="list-disc mt-2 ml-5">
         <li>This is what actually runs the test specs and determine whether a given condition is valid or not</li>
-        <li>A popular assetion library is <a href="https://www.chaijs.com/" target="_blank" rel="noopener noreferrer" class="font-normal">Chai</a></li>
+        <li>A popular assetion library is <a href="https://www.chaijs.com/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Chai</a></li>
       </ul>
       <h3 class="mt-2 mb-2 text-base md:text-lg lg:text-xl">Test Utilites / Plugins</h3>
       <ul class="list-disc mt-2 ml-5">
         <li>
           <span class="font-bold">Vue Test Utils</span>
           <ul class="list-disc mb-2 ml-4">
-            <li>By default, one of the packages that <a href="https://cli.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="font-normal">Vue Cli</a> will install for testing is <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal">Vue Test Utils</a></li>
+            <li>By default, one of the packages that <a href="https://cli.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Vue Cli</a> will install for testing is <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Vue Test Utils</a></li>
             <li>
               This package allows you to unit test Single File Components (SPCs) in Vue JS
               <ul class="list-disc mb-2 ml-4">
@@ -60,7 +60,7 @@
         <li>
           <span class="font-bold">Sinon</span>
           <ul class="list-disc mb-2 ml-4">
-            <li><a href="https://sinonjs.org/" target="_blank" rel="noopener noreferrer" class="font-normal">Sinon</a> allows us to create standalone test spies, stubs and mocks that work with any unit testing framework</li>
+            <li><a href="https://sinonjs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Sinon</a> allows us to create standalone test spies, stubs and mocks that work with any unit testing framework</li>
             <li>
               Spies
               <ul class="list-disc mb-2 ml-4">
@@ -94,8 +94,8 @@
         <li>
           <span class="font-bold">Static</span>
           <ul class="list-disc mb-2 ml-4">
-            <li>our projects should include the use of <a href="https://eslint.org/" target="_blank" rel="noopener noreferrer" class="font-normal">ESLint</a> and specically have installed the eslint-config-havue</li>
-            <li>our projects can also decide whether or not to perform static type analysis using a tool such as <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer" class="font-normal">TypeScript</a></li>
+            <li>our projects should include the use of <a href="https://eslint.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">ESLint</a> and specically have installed the eslint-config-havue</li>
+            <li>our projects can also decide whether or not to perform static type analysis using a tool such as <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">TypeScript</a></li>
           </ul>
         </li>
         <li>
@@ -105,7 +105,7 @@
             <li>should mock imported components</li>
             <li>can test whether other imported components exist but not what occurs inside of them</li>
             <li>
-              <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal">Vue Test Utils</a> shallow mount should be used when rendering the component template (DOM):
+              <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Vue Test Utils</a> shallow mount should be used when rendering the component template (DOM):
               <ul class="list-disc mb-2 ml-4">
                 <li>any child components rendered by the component under test are automatically stubbed</li>
                 <li>tests are faster since it doesn't need to update and render the entire component tree</li>
@@ -121,7 +121,7 @@
             <li>should test interactions between parent and child(ren) component(s)</li>
             <li>assert expected behavior based on the main specific component you are testing</li>
             <li>
-              <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal">Vue Test Utils</a> mount should be used when rendering the component template (DOM) or child(ren) component template(s):
+              <a href="https://vue-test-utils.vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Vue Test Utils</a> mount should be used when rendering the component template (DOM) or child(ren) component template(s):
               <ul class="list-disc mb-2 ml-4">
                 <li>will create an instance of every child component</li>
                 <li>includes child components in the component tree</li>
@@ -135,7 +135,7 @@
           <ul class="list-disc mb-2 ml-4">
             <li>use these tests to perform an automated complete flow as a user</li>
             <li>ideally, these tests should not mock anything</li>
-            <li>can use a tool such as <a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer" class="font-normal">Cypress.io</a> or <a href="https://webdriver.io/" target="_blank" rel="noopener noreferrer" class="font-normal">Webdriver.io</a></li>
+            <li>can use a tool such as <a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Cypress.io</a> or <a href="https://webdriver.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-blue-400">Webdriver.io</a></li>
           </ul>
         </li>
       </ul>
@@ -147,7 +147,7 @@
       <p class="mt-2">The test summary provided in the terminal will provide you with information on passing and failing tests.</p>
     </section>
     <section id="next-up" class="mt-4 md:mt-6 lg:mt-8">
-      Lets now take a look at how we should structure our <router-link to="/documentation/structure" class="font-normal text-base">tests</router-link>.
+      Lets now take a look at how we should structure our <router-link to="/documentation/structure" class="font-normal text-base text-blue-400">tests</router-link>.
     </section>
   </main>
 </template>

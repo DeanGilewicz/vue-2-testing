@@ -22,8 +22,8 @@
       <p class="mt-2">and a Todo Application showcasing a variety of tests.</p>
     </section>
     <section id="what-now" class="mt-4 md:mt-6 lg:mt-8">
-      <p>To learn more about testing, visit the <router-link to="/documentation/introduction" class="font-normal text-base">documentation</router-link>.</p>
-      <p>To view and use the todo application visit the <router-link to="/demo-app" class="font-normal text-base">demo app</router-link>.</p>
+      <p>To learn more about testing, visit the <router-link to="/documentation/introduction" class="font-normal text-base text-blue-400">documentation</router-link>.</p>
+      <p>To view and use the todo application visit the <router-link to="/demo-app" class="font-normal text-base text-blue-400">demo app</router-link>.</p>
     </section>
   </main>
 </template>

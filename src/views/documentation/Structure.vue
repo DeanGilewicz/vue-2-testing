@@ -254,7 +254,7 @@
       </pre>
     </section>
     <section id="next-up" class="mt-4 md:mt-6 lg:mt-8">
-      Lets now take a look at how to test with some <router-link to="/documentation/examples/computed" class="font-normal text-base">examples</router-link>.
+      Lets now take a look at how to test with some <router-link to="/documentation/examples/computed" class="font-normal text-base text-blue-400">examples</router-link>.
     </section>
   </main>
 </template>
