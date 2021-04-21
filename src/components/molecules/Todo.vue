@@ -8,10 +8,9 @@
         id="todo-input-checkbox"
         type="checkbox"
         :checked="todo.completed"
-        :style="isImportantTodoStyles"
         @change="$emit('change-todo-status', $event, todo)"
       />
-      <label class="ml-2 cursor-pointer" for="todo-input-checkbox">{{ todo.name }}</label>
+      <label class="ml-2 cursor-pointer" data-test="todo-input-checkbox-label" for="todo-input-checkbox" :style="isImportantTodoStyles">{{ todo.name }}</label>
     </div>
     <div class="flex">
       <button
@@ -58,7 +57,8 @@ export default {
     isImportantTodoStyles() {
       if (this.todo && this.todo.name && this.todo.name.toLowerCase().includes('*')) {
         return {
-          backgroundColor: 'lightgray'
+          backgroundColor: 'lightgray',
+          padding: '2px 4px'
         };
       }
       return {};

@@ -4,7 +4,8 @@ import { shallowMount } from '@vue/test-utils';
 import {
   todoDeleteButtonEl,
   todoEditButtonEl,
-  todoInputCheckboxEl
+  todoInputCheckboxEl,
+  todoInputCheckboxLabelEl
 } from '../../../utils/elements';
 
 import Todo from '@/components/molecules/Todo';
@@ -52,10 +53,11 @@ describe('Todo', () => {
         expect(Todo.computed.isImportantTodoStyles.call(state)).to.eql({});
       });
 
-      it('should return an object with background color property of lightgray when todo name includes an asterix', () => {
+      it('should return an object with background color property of lightgray and padding when todo name includes an asterix', () => {
         const state = { todo: { name: '* special todo' } };
         expect(Todo.computed.isImportantTodoStyles.call(state)).to.eql({
-          backgroundColor: 'lightgray'
+          backgroundColor: 'lightgray',
+          padding: '2px 4px'
         });
       });
     });
@@ -161,23 +163,26 @@ describe('Todo', () => {
     });
 
     context('styles', () => {
-      it('should not render a background color inline style for input checkbox by default', () => {
+      it('should not render a background color inline style for checkbox label by default', () => {
         const wrapper = shallowMount(Todo, {
           computed: {
             doesTodoExist: () => true
           }
         });
-        expect(wrapper.find(todoInputCheckboxEl).attributes('style')).to.equal(undefined);
+        expect(wrapper.find(todoInputCheckboxLabelEl).attributes('style')).to.equal(undefined);
       });
 
-      it('should render a background color inline style for input checkbox when isImportantTodoStyles returns a background color', () => {
+      it('should render background color and padding inline styles for checkbox label when isImportantTodoStyles returns a background color and padding', () => {
         const wrapper = shallowMount(Todo, {
           computed: {
             doesTodoExist: () => true,
-            isImportantTodoStyles: () => ({ backgroundColor: 'lightgray' })
+            isImportantTodoStyles: () => ({
+              backgroundColor: 'lightgray',
+              padding: '2px 4px'
+            })
           }
         });
-        expect(wrapper.find(todoInputCheckboxEl).attributes('style')).to.equal('background-color: lightgray;');
+        expect(wrapper.find(todoInputCheckboxLabelEl).attributes('style')).to.equal('background-color: lightgray; padding: 2px 4px;');
       });
 
       it('should render a complete class name for delete button when todo is complete', () => {

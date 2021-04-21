@@ -102,10 +102,10 @@ describe('Header', () => {
           localVue,
           router
         });
-        expect(wrapper.find(routerLinkDocumentationEl).classes('text-gray')).to.equal(false);
-        expect(wrapper.find(routerLinkDocumentationEl).classes('text-dark')).to.equal(true);
-        expect(wrapper.find(routerLinkDemoAppEl).classes('text-gray')).to.equal(true);
-        expect(wrapper.find(routerLinkDemoAppEl).classes('text-dark')).to.equal(false);
+        expect(wrapper.find(routerLinkDocumentationEl).classes('text-gray-500')).to.equal(false);
+        expect(wrapper.find(routerLinkDocumentationEl).classes('text-blue-400')).to.equal(true);
+        expect(wrapper.find(routerLinkDemoAppEl).classes('text-gray-500')).to.equal(true);
+        expect(wrapper.find(routerLinkDemoAppEl).classes('text-blue-400')).to.equal(false);
       });
 
       it('should set active text color for demo link and default color for documentation link when visiting a demo route', () => {
@@ -121,10 +121,10 @@ describe('Header', () => {
           localVue,
           router
         });
-        expect(wrapper.find(routerLinkDocumentationEl).classes('text-gray')).to.equal(true);
-        expect(wrapper.find(routerLinkDocumentationEl).classes('text-dark')).to.equal(false);
-        expect(wrapper.find(routerLinkDemoAppEl).classes('text-gray')).to.equal(false);
-        expect(wrapper.find(routerLinkDemoAppEl).classes('text-dark')).to.equal(true);
+        expect(wrapper.find(routerLinkDocumentationEl).classes('text-gray-500')).to.equal(true);
+        expect(wrapper.find(routerLinkDocumentationEl).classes('text-blue-400')).to.equal(false);
+        expect(wrapper.find(routerLinkDemoAppEl).classes('text-gray-500')).to.equal(false);
+        expect(wrapper.find(routerLinkDemoAppEl).classes('text-blue-400')).to.equal(true);
       });
     });
   });

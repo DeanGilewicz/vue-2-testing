@@ -26,4 +26,5 @@ export const todoAddButtonEl = '[data-test="button-todo-add"]';
 export const todoDeleteButtonEl = '[data-test="todo-button-delete-todo"]';
 export const todoEditButtonEl = '[data-test="todo-button-edit-todo"]';
 export const todoInputCheckboxEl = '[data-test="todo-input-checkbox"]';
+export const todoInputCheckboxLabelEl = '[data-test="todo-input-checkbox-label"]';
 export const todoTextInputEl = '[data-test="text-input"]';
