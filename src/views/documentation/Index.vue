@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
   .router-link-active {
-    color: #2F58CA;
-    text-decoration: underline;
+    @apply text-blue-400 underline;
   }
 </style>

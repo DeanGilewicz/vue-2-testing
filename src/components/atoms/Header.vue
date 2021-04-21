@@ -13,13 +13,13 @@
     <section>
       <ul class="nav flex flex-col sm:flex-row mt-6">
         <li class="inline-block mr-12">
-          <router-link class="font-normal text-lg leading-loose" data-test="router-link-demo" to="/demo-app" :class="[isTodoAppRoute ? 'text-dark' : 'text-gray']">Application</router-link>
+          <router-link class="font-normal text-lg leading-loose" data-test="router-link-demo" to="/demo-app" :class="[isTodoAppRoute ? 'text-blue-400' : 'text-gray-500']">Application</router-link>
         </li>
         <li class="inline-block mr-12">
-          <router-link class="font-normal text-lg leading-loose" data-test="router-link-contribute" to="/contribute" :class="[isContributeRoute ? 'text-dark' : 'text-gray']">Contribute</router-link>
+          <router-link class="font-normal text-lg leading-loose" data-test="router-link-contribute" to="/contribute" :class="[isContributeRoute ? 'text-blue-400' : 'text-gray-500']">Contribute</router-link>
         </li>
         <li class="inline-block">
-          <router-link class="font-normal text-lg leading-loose" data-test="router-link-documentation" to="/documentation/introduction" :class="[isDocumentationRoute ? 'text-dark' : 'text-gray']">Documentation</router-link>
+          <router-link class="font-normal text-lg leading-loose" data-test="router-link-documentation" to="/documentation/introduction" :class="[isDocumentationRoute ? 'text-blue-400' : 'text-gray-500']">Documentation</router-link>
         </li>
       </ul>
     </section>

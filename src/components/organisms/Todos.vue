@@ -1,7 +1,6 @@
 <template>
   <div class="todos">
     <h2 class="text-lg md:text-xl lg:text-2xl"><slot>Create Todo</slot></h2>
-    <p v-if="asyncMessage" class="my-5 text-base md:text-lg font-bold italic text-lavender">{{ asyncMessage }}</p>
     <div class="my-5">
       <h3 class="">Todo Name:</h3>
       <div>
@@ -13,8 +12,9 @@
           :disabled="stateMachine.currentState === 'pending'"
           @keydown="handleKeyPressReturn"
         />
-        <button class="inline-block w-48 mt-3 ml-2 px-4 py-2 border border-solid rounded-full leading-normal tracking-wide text-center text-base bg-blue-500 text-white cursor-pointer" data-test="button-todo-add" @click="handleAddTodo">Add Todo</button>
+        <button class="inline-block w-48 mt-3 md:mt-0 ml-0 md:ml-2 px-4 py-2 border border-solid rounded-full leading-normal tracking-wide text-center text-base bg-blue-500 text-white cursor-pointer" data-test="button-todo-add" @click="handleAddTodo">Add Todo</button>
       </div>
+      <p v-if="asyncMessage" class="inline-block mt-1 text-xs italic text-indigo-700">{{ asyncMessage }}</p>
       <div>
         <p v-if="Object.keys(newTodoMessages).length > 0" class="text-sm text-red-500" data-test="message">{{ newTodoMessages.error }}</p>
       </div>
@@ -46,7 +46,7 @@
           @delete-todo="() => handleConfirmationModal(todo)"
         >
           <template v-slot:footer>
-            <span class="text-lg">(Go on remove it)</span>
+            <span class="pt-1 text-xs">(Go on remove it)</span>
           </template>
         </Todo>
       </template>

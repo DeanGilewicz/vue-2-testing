@@ -7,7 +7,6 @@
       <h2 class="text-xl md:text-2xl lg:text-3xl">Test Frameworks</h2>
       <ul class="list-disc mt-2 ml-5">
         <li><a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Cypress</a></li>
-        <li><a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Jest</a></li>
         <li><a href="https://mochajs.org/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Mocha</a></li>
       </ul>
     </section>
@@ -72,12 +71,6 @@
             <li>The official unit-test utility library for Vue JS enabling the ability to test single file components</li>
           </ul>
         </li>
-      </ul>
-    </section>
-    <section id="resource-libraries" class="mt-4 md:mt-6 lg:mt-8">
-      <h2 class="text-xl md:text-2xl lg:text-3xl">Test Examples</h2>
-      <ul class="list-disc mt-2 ml-5">
-        <li><a href="https://lmiller1990.github.io/vue-testing-handbook/" target="_blank" rel="noopener noreferrer" class="font-normal text-base text-blue-400">Vue Test Handbook</a></li>
       </ul>
     </section>
   </main>
