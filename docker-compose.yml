@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: /dockerfiles/api/Dockerfile
+      # args:
+        # some-arg: 1
+    image: 'v2t-api'
+    # container_name: 'vue-2-testing-api'
+    ports:
+      - '4000:4000'
+    # working_dir: '/app'
+  frontend:
+    build:
+      context: .
+      dockerfile: /dockerfiles/client/Dockerfile
+      # args:
+        # some-arg: 1
+    image: 'v2t-fe'
+    # container_name: 'vue-2-testing'
+    ports:
+      - '3000:80'
+    # working_dir: '/app'
+    depends_on:
+      - backend

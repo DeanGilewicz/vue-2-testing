@@ -1,0 +1,7 @@
+.git
+.nyc_output
+coverage
+dist
+dockerfiles
+node_modules
+api
